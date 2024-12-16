@@ -1,0 +1,35 @@
+.Categories {
+    font-size: var(--font-size);
+    padding: var(--padding);
+}
+
+.SectionTitle h2 {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.SectionTitle svg {
+    font-size: calc(var(--font-size) * 2);
+}
+
+.CategoryWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.CategoryWrapper > button {
+    flex: 1 1 calc(15% - 1rem);
+    min-width: 90px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px){
+    .CategoryWrapper > button {
+        min-width: 100px;
+    }
+}

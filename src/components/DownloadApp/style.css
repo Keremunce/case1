@@ -1,0 +1,102 @@
+.DownloadApp {
+    background-color: var(--white);
+    margin: var(--padding);
+    border-radius: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 220px;
+}
+
+.IbanMobileApp {
+    width: 350px;
+    height: 360px;
+    align-self: end;
+}
+
+.IbanMobileApp img {
+    width: 100%;
+}
+
+.DownloadApp .Content .ContentQRImage img {
+    width: 75px;
+}
+
+.DownloadApp .Content>div:first-child {
+    display: flex;
+    align-items: start;
+    gap: 1.6rem;
+}
+
+.DownloadApp .Content>div:first-child .ContentText {
+    display: grid;
+    gap: 1rem;
+    padding: var(--padding-sm);
+}
+
+.DownloadApp .Content>div:first-child .ContentText h5 {
+    font-size: var(--font-size-lg);
+    color: #000;
+}
+
+.DownloadApp .Content>div:last-child {
+    display: flex;
+    gap: 1rem;
+}
+
+.DownloadApp .Content>div:last-child>div {
+    width: 35%;
+}
+
+.DownloadApp .Content>div:last-child img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .DownloadApp {
+        flex-direction: column;
+        border-radius: 2rem;
+        margin: 0;
+        height: auto;
+        padding: var(--padding);
+    }
+
+    .IbanMobileApp {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        top: -90%;
+        transform: translateX(-50%);
+    }
+
+    .DownloadApp .Content>div:last-child {
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+    .DownloadApp .Content>div:last-child>div {
+        width: 50%;
+    }
+
+    .DownloadApp .Content .ContentQRImage img {
+        width: 55px;
+    }
+
+    .DownloadApp .Content>div:first-child {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .DownloadApp .Content>div:first-child .ContentText h5 {
+        font-size: var(--font-size);
+    }
+*/
+    .DownloadApp .Content>div:first-child .ContentText p {
+        font-size: var(--font-size-sm);
+        font-weight: lighter;
+    }
+}

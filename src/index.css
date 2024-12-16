@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --padding-sm: 0.5rem;
+    --padding-md: 1rem;
+    --padding: 2rem;
+    --padding-lg: 3rem;
+    --padding-xl: 4rem;
+
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.4rem;
+    --font-size: 1.6rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 3rem;
+
+
+    --white: #fff;
+    --search-border-color: #edf1f2;
+    --search-bgcolor: #f7f7f7;
+    --search-btncolor: #51b549;
+    --search-color: #555;
+    --primary: #054DC3;
+    --danger: #ff5b4d;
+    --category-borderclr: #e2e7e9;
+    --category-bghover: #4171cf;
+    --primary-o: #d6e5ff;
+    --star-inactive: #d8d8d8;
+    --star-active: #ffc100;
+    --basket-bgcolor: #f54257;
+
+    --radius-sm: 1rem;
+    --radius-md: 1.5rem;
+    --radius-lg: 2rem;
+    --radius-xl: 3rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Source Sans Pro, sans-serif;
+}

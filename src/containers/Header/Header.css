@@ -1,0 +1,35 @@
+.Header {
+    background-color: var(--white);
+}
+.Header > div:first-child{
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header > div:last-child {
+    background-image: url(/src/assets/pagePattern.png);
+    padding: var(--padding);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .Header > div:first-child{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.6rem;
+    }
+    .Header .BasketButton{
+        width: 100%;
+    }
+    .Header .BasketButton button{
+        width: 100%;
+        justify-content: center;
+    }
+    .Header .BasketButton .BasketCount{
+        right: 1%;
+    }
+    .Header div:last-child{
+        text-align: center;
+    }
+}

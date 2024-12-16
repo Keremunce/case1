@@ -1,0 +1,28 @@
+.Banner{
+    padding: var(--padding);
+    border-radius: var(--radius-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: var(--font-size);
+}
+.Banner > div:first-child img{
+    width: 100%;
+    height: auto;
+}
+.Banner > div:first-child{
+    width: 50%;
+}
+.Banner > div:last-child{
+    width: 50%;
+    display: grid;
+    gap: 1rem;
+}
+.Banner > div:last-child button{
+    padding: var(--padding-sm) var(--padding);
+    border-radius: var(--radius-md);
+    border: none;
+    background-color: var(--white);
+    color: var(--danger);
+}

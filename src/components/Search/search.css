@@ -1,0 +1,46 @@
+/* search.css */
+.Search { 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 500px; /* Gerekirse genişliği sınırlandırabilirsiniz */
+    margin: 0 auto; /* Ortalamak için */
+}
+
+.Search svg {
+    font-size: var(--font-size-lg);
+    position: absolute;
+    top: 50%;
+    left: var(--padding);
+    transform: translateY(-50%);
+    color: var(--search-color);
+}
+
+.Search input {
+    font-size: var(--font-size-lg);
+    border: 2px solid var(--search-border-color);
+    border-radius: var(--radius-xl);
+    background-color: var(--search-bgcolor);
+    padding: var(--padding-md) var(--padding-xl) var(--padding-md) calc(var(--padding-xl) + 1rem);
+    color: var(--search-color);
+    width: 100%;
+    max-width: 100%; 
+}
+
+.Search button {
+    padding: var(--padding-md) var(--padding);
+    position: absolute;
+    top: 50%;
+    right: var(--padding-sm);
+    transform: translateY(-50%);
+    border-radius: var(--radius-xl);
+    border: none;
+    background-color: var(--search-btncolor);
+    color: var(--white);
+    font-size: var(--font-size-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

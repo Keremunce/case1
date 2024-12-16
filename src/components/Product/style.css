@@ -1,0 +1,117 @@
+.Product {
+    border: 1px solid var(--category-borderclr);
+    border-radius: var(--radius-md);
+    padding: var(--padding-md);
+    display: grid;
+    gap: 1.6rem;
+}
+
+.Content {
+    display: grid;
+    gap: 1rem;
+    font-size: var(--font-size);
+}
+
+.Title {
+    font-size: var(--font-size-lg);
+}
+
+.Description {
+    font-size: var(--font-size-md);
+    color: var(--search-color);
+
+}
+
+
+.Price {
+    color: #000;
+    font-weight: 600;
+}
+
+.Rating {
+    font-size: var(--font-size-md);
+    color: var(--star-inactive);
+}
+
+.Rating .rate {
+    color: var(--search-color);
+}
+
+.text-yellow-500 {
+    color: var(--star-active);
+}
+
+.text-gray-300 {
+    color: var(--star-inactive);
+}
+
+.AddBasket>button svg {
+    font-size: var(--font-size-lg);
+}
+
+.AddBasket>button {
+    font-size: var(--font-size);
+    width: 100%;
+    padding: var(--padding-md);
+    border-radius: var(--radius-sm);
+    border: none;
+
+    display: inline-flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+    background-color: var(--white);
+    box-shadow: 0 0 0 2px var(--primary);
+    color: var(--primary);
+}
+
+.AddBasket>button:active {
+    transform: scale(.90);
+}
+
+.AddBasket>button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.AddBasket>.InBasket {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--search-border-color);
+    border-radius: 500px;
+    font-size: var(--font-size);
+    padding: var(--padding-sm);
+    transition: .3s;
+    color: var(--search-color);
+    font-weight: bold;
+}
+
+.AddBasket>.InBasket>button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-o);
+    color: var(--primary);
+    font-size: var(--font-size-lg);
+    text-align: center;
+    border-radius: 500px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.AddBasket>.InBasket>button:active {
+    transform: scale(.90);
+}
+
+.AddBasket>.InBasket>button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.Product .Image {
+    text-align: center;
+}

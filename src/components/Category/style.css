@@ -1,0 +1,18 @@
+.Category{
+    border: 1px solid var(--category-borderclr);
+    border-radius: var(--radius-sm);
+    background-color: var(--white);
+    color: var(--search-color);
+    padding: var(--padding);
+    font-size: var(--font-size);
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.Category.active{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.Category:hover{
+    background-color: var(--category-bghover);
+    color: var(--white);
+}

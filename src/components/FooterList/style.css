@@ -1,0 +1,25 @@
+.FooterList {
+    padding: var(--padding);
+    display: grid;
+    gap: 1.6rem;
+}
+
+.FooterList ul {
+    list-style-type: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.FooterList ul li a {
+    text-decoration: none;
+    color: var(--search-color);
+}
+
+.FooterList ul li:hover a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.FooterList h3 {
+    color: var(--primary);
+}

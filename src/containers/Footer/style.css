@@ -1,0 +1,76 @@
+.Footer{
+    background-color: var(--search-bgcolor);
+    font-size: var(--font-size);
+    color: var(--search-color);
+}
+.Footer svg {
+    font-size: var(--font-size-xl);
+}
+.Footer .Socials{
+    display: flex;
+    gap: 1.6rem;
+}
+.DownloadAppWrapper{
+    padding: 150px var(--padding) var(--padding) var(--padding);
+}
+.FooterContent {
+    display: grid;
+    grid-template-columns: 3fr 7fr; /* 7'ye 3 oranı */
+    align-items: center;
+    padding: var(--padding);
+    gap: 1.6rem;
+}
+
+@media (max-width: 768px) {
+    .FooterContent {
+        grid-template-columns: 1fr; /* Mobil görünüm için tek sütun */
+        gap: 1.2rem;
+    }
+}
+
+.FooterContent > div:first-child {
+    border-right: 1px dashed var(--search-color);
+    padding-right: var(--padding);
+    display: grid;
+    gap: 1.6rem;
+}
+
+.FooterContent > div:last-child {
+    padding-left: var(--padding);
+}
+
+.BottomContent {
+    padding: var(--padding) 20%;
+    text-align: center;
+    font-size: var(--font-size-md);
+}
+.Bottom{
+    background-color: var(--category-borderclr);
+    padding: var(--padding);
+    text-align: center;
+}
+.Footer .List{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+    .FooterContent > div:first-child {
+        place-content: center;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px dashed var(--search-color);
+        padding-right: 0;
+        padding-bottom: var(--padding);
+    }
+    .Footer .Socials{
+        justify-content: center;
+    }
+    .Footer .List{
+        flex-wrap: wrap;
+    }
+    .BottomContent {
+        padding: var(--padding) 5%;
+        font-weight: lighter;
+        font-size: var(--font-size-sm);
+    }
+}

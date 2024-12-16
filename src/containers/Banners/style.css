@@ -1,0 +1,23 @@
+.Banners {
+    display: grid;
+    gap: 2rem;
+    padding: var(--padding);
+}
+
+.Banners>div {
+    flex: 1;
+}
+
+.Banners h3 {
+    font-size: var(--font-size-lg);
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.BannersWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.6rem;
+}
