@@ -1,14 +1,14 @@
 import Product from "@/components/Product";
 import { IoFlameSharp } from "react-icons/io5";
 import './style.css';
-import { useGlobalContext } from "@/contexts/GlobalContext";
+import { ProductProps, useGlobalContext } from "@/contexts/GlobalContext";
 import { useState, useEffect } from "react";
 
 const Products = () => {
     const { selectedCategory } = useGlobalContext();
     const { searchQuery } = useGlobalContext();
-    const [products, setProducts] = useState<Product[]>([]);
-    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+    const [products, setProducts] = useState<ProductProps[]>([]);
+    const [filteredProducts, setFilteredProducts] = useState<ProductProps[]>([]);
     const { basket, setBasket } = useGlobalContext();
     useEffect(() => {
         fetch("https://dummyjson.com/products")
@@ -37,7 +37,7 @@ const Products = () => {
         }
 
     }, [selectedCategory]);
-    const handleAddBasket = (product: Product) => {
+    const handleAddBasket = (product: ProductProps) => {
         const isProductInBasket = basket.some(item => item.id === product.id);
         
         if (isProductInBasket) {

@@ -3,7 +3,7 @@ import { useGlobalContext } from "@/contexts/GlobalContext";
 import { IoSearch } from "react-icons/io5";
 
 const Search: React.FC = () => {
-    const { searchQuery, setSearchQuery } = useGlobalContext();
+    const { setSearchQuery } = useGlobalContext();
 
     return (
         <div className="Search">

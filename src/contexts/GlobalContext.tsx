@@ -1,6 +1,6 @@
-import React, { createContext, useState, useContext, ReactNode } from "react";
+import { createContext, useState, useContext, ReactNode } from "react";
 
-interface Product {
+export interface ProductProps {
     id: number;
     title: string;
     description: string;
@@ -16,8 +16,8 @@ interface GlobalContextType {
     setSearchQuery: (query: string) => void;
     selectedCategory: string;
     setSelectedCategory: (query: string) => void;
-    basket: Product[];
-    setBasket: (basket: Product[]) => void;
+    basket: ProductProps[];
+    setBasket: (basket: ProductProps[]) => void;
 }
 
 const defaultValue: GlobalContextType = {
@@ -43,7 +43,7 @@ export const useGlobalContext = () => {
 export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [searchQuery, setSearchQuery] = useState<string>("");
     const [selectedCategory, setSelectedCategory] = useState<string>("all"); // Varsayılan değer 'all'
-    const [basket, setBasket] = useState<Product[]>([]); 
+    const [basket, setBasket] = useState<ProductProps[]>([]); 
 
     return (
         <GlobalContext.Provider
@@ -53,7 +53,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
                 selectedCategory,
                 setSelectedCategory,
                 basket,
-                setBasket,
+                setBasket
             }}
         >
             {children}

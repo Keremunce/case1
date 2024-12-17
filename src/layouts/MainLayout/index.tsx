@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Header from "@/containers/Header";
 import Footer from "@/containers/Footer";
 

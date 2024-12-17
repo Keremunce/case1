@@ -1,7 +1,7 @@
 import './style.css';
 import Banner from "@/components/Banner";
 import { useEffect, useState } from 'react';
-interface Banner {
+interface BannerProps {
     title: string;
     image: string;
     button: string;
@@ -9,7 +9,7 @@ interface Banner {
 }
 import { IoFlameSharp } from 'react-icons/io5';
 const Banners = () => {
-    const [banners, setBanners] = useState<Banner[]>([]);
+    const [banners, setBanners] = useState<BannerProps[]>([]);
     useEffect(() => {
         const array = [
             { title: "Delivery Fee is on Us for Orders Over 75 TL", button: "Learn More", color: "#feeae8", image: "https://hasaneksi.net/wp-content/uploads/2022/01/moto-kurye-min.png" },
