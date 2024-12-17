@@ -15,8 +15,6 @@ The case study focuses on:
 - **React**: For building the UI components and managing the state.
 - **TypeScript**: To ensure type safety and better development experience.
 - **React Context API**: For global state management.
-- **Styled Components / Tailwind CSS**: For styling the app.
-- **React Router**: For navigation (if applicable).
 
 ## Key Features
 
